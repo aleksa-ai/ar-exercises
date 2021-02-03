@@ -17,6 +17,6 @@ Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: true, women
 # Checking count:
 # puts @mens_stores.count
 
-#Loop Sub-exercise left to do
+@mens_stores.each { |store| puts "The #{store.name} store makes $#{store.annual_revenue}!"}
 
-@womens_stores_million = Store.where(womens_apparel: true, annual_revenue: # ).count
+puts @womens_stores_million = Store.where(womens_apparel: true, annual_revenue: -Float::INFINITY..1000000 ).count
