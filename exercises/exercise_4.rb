@@ -19,4 +19,4 @@ Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: true, women
 
 @mens_stores.each { |store| puts "The #{store.name} store makes $#{store.annual_revenue}!"}
 
-puts @womens_stores_million = Store.where(womens_apparel: true, annual_revenue: -Float::INFINITY..1000000 ).count
+@womens_stores_million = Store.where(womens_apparel: true, annual_revenue: -Float::INFINITY..1000000).count
